@@ -1,0 +1,6 @@
+image-proxy-server/node_modules/
+Data/
+*.h5
+*.bin
+js/
+htmlInit.html

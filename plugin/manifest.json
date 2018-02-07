@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Porn Block",
+  "version": "0.1.0",
+  "description": "Porn Block",
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["js/jquery.min.js", "js/keras.min.js", "js/jquery.getimagedata.js", "content.js"],
+    "matches": ["*://*/*"]
+  }],
+  "web_accessible_resources": [
+    "web-accessible-resources/fourth_try.bin"
+  ],
+  "permissions":[
+    "localhost:3000"
+  ]
+}
