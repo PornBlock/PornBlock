@@ -6,7 +6,7 @@
   "description": "Porn Block",
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["js/jquery.min.js", "js/keras.min.js", "js/jquery.getimagedata.js", "content.js"],
+    "js": ["js/jquery.min.js", "js/keras.min.js", "js/jquery.getimagedata.js", "js/mutation-summary.js", "content.js"],
     "matches": ["*://*/*"]
   }],
   "web_accessible_resources": [

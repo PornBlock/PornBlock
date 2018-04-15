@@ -49,7 +49,7 @@ app.get('/', function(req, res){
 		request({ uri:url, encoding: null }, function (error, response, body) {
       console.log("data fetched for url ", url);
 			// If the request was OK
-			if (!error && response.statusCode == 200) {
+			if (!error && response != undefined && response.statusCode == 200) {
 
 				// Check if the mimetype says it is an image
 				var mimetype = response.headers["content-type"];
