@@ -13,6 +13,6 @@
     "web-accessible-resources/fourth_try.bin"
   ],
   "permissions":[
-    "localhost:3000"
+    "https://obscure-citadel-79502.herokuapp.com/"
   ]
 }
