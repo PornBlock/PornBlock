@@ -1,5 +1,5 @@
-var img_height = 150;
-var img_width = 150;
+var img_height = 32;
+var img_width = 32;
 var imageData;
 var parsedImgData = new Float32Array(img_height*img_width*3);
 var prediction;
@@ -7,7 +7,7 @@ var prediction;
 var modelReady = false;
 const model = new KerasJS.Model({
   // XXX Read this file path via chrome extension api
-  filepath: 'chrome-extension://' + chrome.runtime.id + '/web-accessible-resources/fourth_try.bin',
+  filepath: 'chrome-extension://' + chrome.runtime.id + '/web-accessible-resources/model.bin',
 });
 
 function convertURIToImageData(URI) {
@@ -82,7 +82,7 @@ function classifyImage(image)
   predictionPromise.then((out)=>{
     var predictedClass = out[0];
     var img = out[1];
-    if(predictedClass[0] == 1){
+    if(predictedClass[0] == 0){
       img.style.filter = "none";
     }
   });

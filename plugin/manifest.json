@@ -10,7 +10,7 @@
     "matches": ["*://*/*"]
   }],
   "web_accessible_resources": [
-    "web-accessible-resources/fourth_try.bin"
+    "web-accessible-resources/model.bin"
   ],
   "permissions":[
     "https://obscure-citadel-79502.herokuapp.com/"
